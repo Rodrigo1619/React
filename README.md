@@ -15,3 +15,9 @@ import app from 'direccion'
 ```
 
 Esto se puede hacer con las arrow function y asi se estara trabajando a lo largo del curso.
+
+# Fragmento
+Si queremos exportar mas de una etiqueta html nos dara un error, entonces hay 3 formas 
+* Poner un div como elemento padre
+* Importar {Fragment} de react y poner eso como elemento padre
+* La ultima y la mas comun es solamente poner un <> como elemento padre y eso ya es sinonimo de un Fragment
