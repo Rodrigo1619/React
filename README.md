@@ -36,6 +36,9 @@ Si queremos exportar mas de una etiqueta html nos dara un error, entonces hay 3 
 * Importar {Fragment} de react y poner eso como elemento padre
 * La ultima y la mas comun es solamente poner un <> como elemento padre y eso ya es sinonimo de un Fragment
 
+# Recomendacion
+Si la funcion que estamos haciendo no tiene nada que ver con los valores del componente padre, la podemos sacar del componente y es un poco mas eficiente debido a que cuando el componente se vuelve a renderizar, no vuelve a guardar un espacio en memoria para la funcion
+
 # Imprimir variables en el html
 Si queremos imprimir una variable en una etiquieta simplemente ponemos {variable}, incluso podemos imprimir lo que es una funcion, pero solamente si lo ponemos dentro de {} porque eso lo que nos permite es poner sintaxis o expresiones de js
 
