@@ -10,14 +10,24 @@ export const CounterApp = ({value})=>{
         //setCounter((c)=>c+1) //esta es otra forma de poder hacerlo 
     }
 
+    //para restar
+    const handleLess = () =>{
+        setCounter(counter -1)
+    }
+
+    //Para restart
+    const handleReset = ()=>{
+        setCounter(value) //yo lo intente con counter = value pero esto da un error
+    }
+
     return(
         <>
             <h1>CounterApp</h1>
             <h2> {counter} </h2>
 
-            <button onClick={handleAdd  }>
-                +1
-            </button>
+            <button onClick={ handleAdd }>+1</button>
+            <button onClick={ handleLess }>-1</button>
+            <button onClick={ handleReset }>Reset</button>
         </>
     )
 }
