@@ -7,13 +7,14 @@ export const FirstApp = ({title, subtitle, name}) => {
             <h1 data-testid="test-title">{title}</h1>
             {/**< </h1>  */}
             <p>{subtitle}</p>
+            <p>{subtitle}</p>
             <p>{name}</p>
         </>
 
     )
 }
 //Para poder agegarle tipado y que sea obligatorio mandar la propiedad
-FirstApp.propTypes ={
+FirstApp.propTypes ={ 
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
 }
