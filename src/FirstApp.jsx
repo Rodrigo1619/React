@@ -4,7 +4,7 @@ export const FirstApp = ({title, subtitle, name}) => {
     //console.log(props);
     return (
         <>
-            <h1> {title} </h1>
+            <h1>{title}</h1>
             {/**< </h1>  */}
             <p>{subtitle}</p>
             <p>{name}</p>
@@ -19,7 +19,7 @@ FirstApp.propTypes ={
 }
 
 FirstApp.defaultProps ={
-    title: 'Hola camaron sin cola',
+    //title: 'Hola camaron sin cola',
     subtitle: 123,
     name: 'Rodrigo Molina'
 }
